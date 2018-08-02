@@ -1,0 +1,24 @@
+.navbar{
+  background-color: #026aa7;
+  padding: 4px;
+    z-index: 10;
+}
+
+#iconoBuscar{
+  margin-left:-40px;
+  color:  white;
+}
+
+#inputSearch{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+}
+
+#logoTrello{
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;
+  display: block;
+  top: 10px;
+  opacity: .5;
+}

@@ -1,24 +1,80 @@
-.navbar{
+ .navbar{
   background-color: #026aa7;
   padding: 4px;
-    z-index: 10;
+  z-index: 10;
+}
+
+#iconoTrello{
+  margin-left: -90px;
+  color: white;
+}
+
+#tableros{
+  color: white;
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  text-align: right;
+  width: 100px;
 }
 
 #iconoBuscar{
-  margin-left:-40px;
+  margin-left:-30px;
   color:  white;
+  margin-top: -40px;
 }
 
 #inputSearch{
   background-color: hsla(0,0%,100%,.3);
   border: hsla(0,0%,100%,.3);
+  margin-left: 105px;
+  margin-top: -38px;
 }
 
-#logoTrello{
-  position: absolute;
-  left: 50%;
-  margin-left: -50px !important;
-  display: block;
-  top: 10px;
+#logoTrello{  
   opacity: .5;
+} 
+
+#añadirLista{
+  background-color: #026aa7;
+  border: #026aa7;
 }
+
+body{
+  background-color: rgb(0, 121, 191);
+}
+
+.container{
+  margin-top: 20px;
+}
+
+#textTablero{
+  color: white;
+}
+
+#iconoStar{
+  color: white;
+  padding-top: 8px;
+}
+
+#textReto{
+  color: white;
+  margin-top: 5px;
+}
+
+#textPrivado{
+  color: white;
+  margin-top: 5px;
+}
+
+#iconoMaleta{
+  color: white;
+  margin-top: 10px;
+}
+
+#anadirLista{
+  margin-top: 20px;
+  background-color: #026aa7;
+  border: #026aa7; 
+}
+
+  

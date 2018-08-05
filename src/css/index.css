@@ -72,9 +72,27 @@ body{
 }
 
 #anadirLista{
-  margin-top: 20px;
   background-color: #026aa7;
   border: #026aa7; 
 }
 
-  
+#tituloLista{
+  border: #026aa7; 
+}
+
+#botonAnadirLista{
+  color: white;
+  background-color: #5aac44;
+  /* cambia de color al poner cursor encima: #519839; */
+}
+
+.oculto{
+  display: none !important;
+}
+
+
+
+.card-white{
+  background-color: snow;
+  border-radius: 5px;
+}

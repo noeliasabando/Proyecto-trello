@@ -32,56 +32,53 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="col-md-9">
     <div class="row">
 
-      <div class="col-12 col-md-1">
+      <div class="col-2 col-md-1">
         <div class="col-md-1">
           <h4 id="textTablero">Tablero</h4>
         </div>
       </div>
 
-      <div class="col-12 col-md-1">
+      <div class="col-1 col-md-1">
         <div class="col-md-1">
           <i id="iconoStar" class="far fa-star"></i>
         </div>
       </div>
 
-      <div class="col-12 col-md-2">
+      <div class="col-4 col-md-2">
         <div class="col-md-12">
           <p id="textReto">Reto de Código</p>
         </div>
       </div>
 
-      <div class="col-12 col-md-1">
+      <div class="col-2 col-md-1">
         <div class="col-md-1">
           <p id="textPrivado">Privado</p>
         </div>
       </div>
 
-      <div class="col-12 col-md-1">
+      <div class="col-1 col-md-1">
         <div class="col-md-1">
           <i id="iconoMaleta" class="fas fa-briefcase"></i>
         </div>
       </div>
     </div>
+  </div>
 
-  </div>
-  </div>
-<!-- 
-  <div class="container1">
-    <div class="row">
-      <div class="col-12 col-md-12">
-        <input id="anadirLista" type="text" placeholder=" +Añada una lista">
-      </div>
+  
+<section id="tablero" class="row flex-row flex-nowrap">
+  <div class="col nuevaColumna col-12 col-md-3 pr-0 order-last">
+    <div class="card-white">
+      <button id="anadirLista" class="form-control col-12 ">+Añada una lista...</button>
+      <input id="tituloLista" class="form-control col-12 oculto" type="search" placeholder=" Introduzca el título de la lista...">
+      <button id="botonAnadirLista" class="btn btn-outline-success col-4 oculto" onclick="anadirColumna()">Añadir lista</button>
     </div>
-  </div> -->
+  </div>
+</section>
 
-  <nav class="col-3 col-md-6">
-      <form class="form-inline">
-        <input id="anadirLista" class="form-control mr-sm-2" type="search" placeholder=" +Añada una lista" aria-label="Search">
-      </form>
-    </nav>
+
 
 
 
@@ -96,6 +93,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+    <script src="./src/js/añadirLista.js"></script>
 </body>
 
 </html>

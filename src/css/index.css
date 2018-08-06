@@ -20,14 +20,13 @@
 #iconoBuscar{
   margin-left:-30px;
   color:  white;
-  margin-top: -40px;
 }
 
 #inputSearch{
   background-color: hsla(0,0%,100%,.3);
   border: hsla(0,0%,100%,.3);
-  margin-left: 105px;
-  margin-top: -38px;
+  margin-left: 80px;
+  
 }
 
 #logoTrello{  

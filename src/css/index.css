@@ -5,7 +5,7 @@
 }
 
 #iconoTrello{
-  margin-left: -90px;
+  margin-left: -85px;
   color: white;
 }
 
@@ -25,15 +25,15 @@
 #inputSearch{
   background-color: hsla(0,0%,100%,.3);
   border: hsla(0,0%,100%,.3);
-  margin-left: 80px;
-  
+  margin-left: 80px;  
 }
 
 #logoTrello{  
   opacity: .5;
 } 
 
-#añadirLista{
+#anadirLista{
+  color: white;
   background-color: #026aa7;
   border: #026aa7;
 }
@@ -73,13 +73,17 @@ body{
 #anadirLista{
   background-color: #026aa7;
   border: #026aa7; 
+  text-align: left;
 }
 
 #tituloLista{
-  border: #026aa7; 
+  border:  rgb(0, 121, 191);
 }
 
 #botonAnadirLista{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
   color: white;
   background-color: #5aac44;
   /* cambia de color al poner cursor encima: #519839; */
@@ -89,9 +93,47 @@ body{
   display: none !important;
 }
 
-
-
 .card-white{
-  background-color: snow;
+  background-color: rgb(216, 208, 208);
   border-radius: 5px;
+  margin-left: 10px;
+}
+
+#btnMas{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  width: 35px;
+  height: 30px;
+/*  margin-left: 450px;   */
+}
+
+#iconoMas{
+  margin-left: -30px;
+  color: white;
+}
+
+#btnInfo{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  width: 35px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#iconoInfo{
+  margin-left: -30px;
+  color: white;
+}
+
+#btnCampana{
+  background-color: rgba(236, 58, 14, 0.808);
+  border: rgba(236, 58, 14, 0.808);
+  width: 35px;
+  height: 30px; 
+  margin-left: 10px; 
+}
+
+#iconoCampana{
+  margin-left: -30px;
+  color: white;
 }

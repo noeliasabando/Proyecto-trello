@@ -19,59 +19,70 @@
       <div class="col-auto col-md-12">
         <nav class="navbar navbar-expand-lg">
           <form class="form-inline">
-            <button id="tableros" class="col-4 btn btn-outline-success" type="submit">Tableros</button>
-            <i id="iconoTrello" class="fab fa-trello"></i>
-            <input id="inputSearch" class="col-2 col-md-7 form-control" type="search" aria-label="Search">
+            <button id="tableros" class="col-3 btn btn-outline-success" type="submit">Tableros</button>
+            <i id="iconoTrello" class="fab fa-trello col-1"></i>
+            <input id="inputSearch" class="col-2 col-md-7 form-control text-center" type="search" aria-label="Search">
             <i id="iconoBuscar" class="fas fa-search"></i>
           </form>
-          <div class="col-auto col-md-6 text-center"><img id="logoTrello" src="img/descarga.png" alt="logo trello"></div>
-          <div class="col-auto col-md-4 text-center">
+          <div class="col-1 col-md-4 text-center">
+            <img id="logoTrello" src="img/descarga.png" alt="logo trello">
+          </div>
+          <div id="logos" class="col-4 col-md-4 text-right">
             <button id="btnMas" class=" btn btn-outline-success" type="submit"></button>
             <i id="iconoMas" class="fas fa-plus"></i>
             <button id="btnInfo" class=" btn btn-outline-success" type="submit"></button>
             <i id="iconoInfo" class="fas fa-info-circle"></i>
             <button id="btnCampana" class=" btn btn-outline-success" type="submit"></button>
             <i id="iconoCampana" class="far fa-bell"></i>
+            <button id="btnUserBarra">NS</button>
           </div>
         </nav>
       </div>
     </div>
   </header>
 
-  <div class="col-md-9">
+
+
+
+  <section>
     <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="row">
+          <div class="col-1 pl-0 col-md-1">
+            <h4 id="textTablero">Tablero</h4>
+          </div>
 
-      <div class="col-3 pl-0 col-md-1">
-        <div class="col-md-1">
-          <h4 id="textTablero">Tablero</h4>
+          <div class="col-1 pl-0 col-md-1">
+            <i id="iconoStar" class="far fa-star"></i>
+          </div>
+
+          <div class="col-2 pl-0 col-md-2">
+            <p id="textReto">Personal</p>
+          </div>
+
+          <div class="col-1 pl-0 col-md-1">
+            <i id="iconoMaleta" class="fas fa-lock"></i>
+          </div>
+
+          <div class="col-1 pl-0 col-md-1">
+            <p id="textPrivado">Privado</p>
+          </div>
+
+          <div class="col-1 pl-0 col-md-1">
+            <button id="btnUser">NS</button>
+          </div>
+
+          <div class="col-1 pl-0 col-md-1">
+            <i id="logoUser" class="fas fa-user-circle"></i>
+          </div>
         </div>
       </div>
-
-      <div class="col-1 pl-0 col-md-1">
-        <div class="col-md-1">
-          <i id="iconoStar" class="far fa-star"></i>
-        </div>
-      </div>
-
-      <div class="col-4 pl-0 col-md-2">
-        <div class="col-md-12">
-          <p id="textReto">Reto de Código</p>
-        </div>
-      </div>
-
-      <div class="col-2 pl-0 col-md-1">
-        <div class="col-md-1">
-          <p id="textPrivado">Privado</p>
-        </div>
-      </div>
-
-      <div class="col-1 pl-0 col-md-1">
-        <div class="col-md-1">
-          <i id="iconoMaleta" class="fas fa-briefcase"></i>
-        </div>
-      </div>
+      <i id="puntos" class="row fas fa-ellipsis-h col-1 col-md-12 text-right"> Mostrar Menú</i>
     </div>
-  </div>
+  </section>
+
+
+
 
 
   <section id="tablero" class="row flex-row flex-nowrap">

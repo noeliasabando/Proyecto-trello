@@ -29,27 +29,36 @@ function anadirColumna(){
   let anadirTarjeta= document.createElement("div");
   anadirTarjeta.className= "col col-12";
   anadirTarjeta.addEventListener("click", mostrarTarjetaOnclick);
-  anadirTarjeta.textContent= "Añada una tarjeta";
+  anadirTarjeta.textContent= "+ Añada una tarjeta";
   let tituloTarjeta= document.createElement("textarea");
   tituloTarjeta.className= "col form-control col-12 oculto";
   tituloTarjeta.placeholder= " Introduzca un título para esta tarjeta...";
   let botonAnadirTarjeta= document.createElement("button");
   botonAnadirTarjeta.className= "col btn btn-outline-success col-4 oculto";
   botonAnadirTarjeta.addEventListener("click" , anadirTarjetaOnclick);
-  botonAnadirTarjeta.textContent= "Añadir lista";
+  botonAnadirTarjeta.textContent= "Añadir tarjeta";
 
   contenedorInterno.appendChild(anadirTarjeta);
-  contenedorInterno.appendChild(tituloTarjeta);
-  contenedorInterno.appendChild(botonAnadirTarjeta);
+  contenedorInterno.appendChild(tituloTarjeta).style.width="310px";
+  contenedorInterno.appendChild(tituloTarjeta).style.marginLeft="5px";
+  contenedorInterno.appendChild(tituloTarjeta).style.marginTop="-15px";
 
-  contenedorOpciones.appendChild(contenedorInterno);
 
-  fondoColumna.appendChild(titulo);
-  fondoColumna.appendChild(contenedorOpciones);
+  contenedorInterno.appendChild(botonAnadirTarjeta).style.backgroundColor="#5aac44";
+  contenedorInterno.appendChild(botonAnadirTarjeta).style.color="white";
+  contenedorInterno.appendChild(botonAnadirTarjeta).style.marginLeft="10px";
+  contenedorInterno.appendChild(botonAnadirTarjeta).style.marginTop="5px";
+  contenedorInterno.appendChild(botonAnadirTarjeta).style.fontSize="15px";
 
-  columna.appendChild(fondoColumna);
+  contenedorOpciones.appendChild(contenedorInterno).style.color="grey";
 
-  tablero.appendChild(columna);
+  fondoColumna.appendChild(titulo).style.paddingLeft="20px";
+  fondoColumna.appendChild(titulo).style.fontWeight="bold";
+  fondoColumna.appendChild(contenedorOpciones).style.paddingTop="20px";
+
+  columna.appendChild(fondoColumna).style.padding="15px";
+
+  tablero.appendChild(columna).style.border-radious;"10px";
 
   /* tablero.innerHTML+= `
   <div class="columna col col-12 col-md-3">

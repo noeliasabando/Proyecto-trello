@@ -112,14 +112,18 @@ body{
   background-color: #026aa7;
   border: #026aa7; 
   text-align: left;
+  margin-top: -5px;
 }
 
 #tituloLista{
-  border:  rgb(0, 121, 191);
+  width: 310px;
+  margin-left: 7px;
+  border:  rgb(0, 121, 191); 
 }
 
 #botonAnadirLista{
-  margin-top: 5px;
+  height: 35px;
+  margin-top: 7px;
   margin-bottom: 5px;
   margin-left: 10px;
   color: white;
@@ -132,9 +136,10 @@ body{
 }
 
 .card-white{
-  background-color: rgb(216, 208, 208);
+  background-color: #e2e4e6;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 10px; 
+  padding-top: 5px;
 }
 
 #btnMas{
@@ -206,7 +211,7 @@ body{
 } 
 
 #menu{
-  color: white;
+color: white;
  margin-top: -45px;
  margin-left: 10px;
  text-decoration: underline; 

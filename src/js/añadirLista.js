@@ -14,17 +14,17 @@ function anadirColumna(){
   document.getElementById("tituloLista").value ="";
 
   let columna= document.createElement("div");
-  columna.className = "columna col col-12 col-md-3";
+  columna.className = "col col-12 col-md-3 columna";
   let fondoColumna= document.createElement("div");
-  fondoColumna.className= "card-white col";
+  fondoColumna.className= "card-white col fondoColumna";
   let titulo= document.createElement("div");
-  titulo.className= "row";
+  titulo.className= "row titulo";
   titulo.textContent = tituloLista;
 
   let contenedorOpciones= document.createElement("div");
-  contenedorOpciones.className= "row";
+  contenedorOpciones.className= "row contenedorOpciones";
   let contenedorInterno= document.createElement("div");
-  contenedorInterno.className= "col p-0"
+  contenedorInterno.className= "col p-0 contenedorInterno"
 
   let anadirTarjeta= document.createElement("div");
   anadirTarjeta.className= "col col-12";
@@ -33,32 +33,27 @@ function anadirColumna(){
   let tituloTarjeta= document.createElement("textarea");
   tituloTarjeta.className= "col form-control col-12 oculto";
   tituloTarjeta.placeholder= " Introduzca un título para esta tarjeta...";
+  tituloTarjeta.classList.add("tituloTarjetas");
   let botonAnadirTarjeta= document.createElement("button");
   botonAnadirTarjeta.className= "col btn btn-outline-success col-4 oculto";
   botonAnadirTarjeta.addEventListener("click" , anadirTarjetaOnclick);
   botonAnadirTarjeta.textContent= "Añadir tarjeta";
+  botonAnadirTarjeta.classList.add("botonAnadirTarjetas")
 
   contenedorInterno.appendChild(anadirTarjeta);
-  contenedorInterno.appendChild(tituloTarjeta).style.width="310px";
-  contenedorInterno.appendChild(tituloTarjeta).style.marginLeft="5px";
-  contenedorInterno.appendChild(tituloTarjeta).style.marginTop="-15px";
+  contenedorInterno.appendChild(tituloTarjeta);
 
 
-  contenedorInterno.appendChild(botonAnadirTarjeta).style.backgroundColor="#5aac44";
-  contenedorInterno.appendChild(botonAnadirTarjeta).style.color="white";
-  contenedorInterno.appendChild(botonAnadirTarjeta).style.marginLeft="10px";
-  contenedorInterno.appendChild(botonAnadirTarjeta).style.marginTop="5px";
-  contenedorInterno.appendChild(botonAnadirTarjeta).style.fontSize="15px";
+  contenedorInterno.appendChild(botonAnadirTarjeta);
 
-  contenedorOpciones.appendChild(contenedorInterno).style.color="grey";
+  contenedorOpciones.appendChild(contenedorInterno);
 
-  fondoColumna.appendChild(titulo).style.paddingLeft="20px";
-  fondoColumna.appendChild(titulo).style.fontWeight="bold";
-  fondoColumna.appendChild(contenedorOpciones).style.paddingTop="20px";
+  fondoColumna.appendChild(titulo);
+  fondoColumna.appendChild(contenedorOpciones);
 
-  columna.appendChild(fondoColumna).style.padding="15px";
+  columna.appendChild(fondoColumna);
 
-  tablero.appendChild(columna).style.border-radious;"10px";
+  tablero.appendChild(columna);
 
   /* tablero.innerHTML+= `
   <div class="columna col col-12 col-md-3">
@@ -90,7 +85,9 @@ function mostrarTarjetaOnclick(event){
 
 function anadirTarjetaOnclick(event){
   let nuevoHijo= document.createElement("div");
-  nuevoHijo.className= "row";
+  nuevoHijo.className= "row nuevaTarea";
   nuevoHijo.textContent= event.target.previousSibling.value;
-  let nuevaTarea= event.target.parentElement.parentElement.parentElement.appendChild(nuevoHijo);
+  let padre= event.target.parentElement.parentElement.parentElement;
+  let nuevaTarea= padre.insertBefore(nuevoHijo, padre.lastChild);
+  
 }

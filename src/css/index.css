@@ -53,14 +53,14 @@ body{
 }
 
 #textTablero{
-  margin-left: 20px;
+  margin-left: 25px;
   margin-top: 10px;
   font-size: 17px;
   color: white;
 }
 
 #iconoStar{
-  margin-left: 15px;
+  margin-left: 25px;
   color: white;
   padding-top: 16px;
   padding-left: 30px;
@@ -113,6 +113,7 @@ body{
   border: #026aa7; 
   text-align: left;
   margin-top: -5px;
+  color: hsla(0,0%,100%,.7);
 }
 
 #tituloLista{
@@ -217,5 +218,51 @@ color: white;
  text-decoration: underline; 
 }
 
+.tituloTarjetas{
+  width: 310px;
+  margin-left: 5px;
+  margin-top: -15px;
+}
 
+.botonAnadirTarjetas{
+  background-color: #5aac44;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+}
 
+.contenedorInterno{
+  color: grey;
+}
+
+.titulo{
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.contenedorOpciones{
+  display: flex;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+
+.fondoColumna{
+  padding: 15px;
+}
+
+.columna{
+  border-radius: 10px;
+  padding-right: 0px;
+}
+
+.nuevaTarea{
+  background-color: white;
+  border-radius: 5px;
+  margin-left: -7px;
+  margin-top: 8px;
+  width: 305px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

@@ -35,7 +35,7 @@ function anadirColumna(){
   tituloTarjeta.placeholder= " Introduzca un título para esta tarjeta...";
   tituloTarjeta.classList.add("tituloTarjetas");
   let botonAnadirTarjeta= document.createElement("button");
-  botonAnadirTarjeta.className= "col btn btn-outline-success col-4 oculto";
+  botonAnadirTarjeta.className= "col btn btn-outline-success col-5 oculto";
   botonAnadirTarjeta.addEventListener("click" , anadirTarjetaOnclick);
   botonAnadirTarjeta.textContent= "Añadir tarjeta";
   botonAnadirTarjeta.classList.add("botonAnadirTarjetas")

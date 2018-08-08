@@ -139,7 +139,7 @@ body{
 .card-white{
   background-color: #e2e4e6;
   border-radius: 5px;
-  margin-left: 10px; 
+  margin-left: 3px; 
   padding-top: 5px;
 }
 
@@ -219,8 +219,8 @@ color: white;
 }
 
 .tituloTarjetas{
-  width: 310px;
-  margin-left: 5px;
+  width: 317px;
+  margin-left: 10px;
   margin-top: -15px;
 }
 
@@ -259,9 +259,9 @@ color: white;
 .nuevaTarea{
   background-color: white;
   border-radius: 5px;
-  margin-left: -7px;
+  margin-left: -4px;
   margin-top: 8px;
-  width: 305px;
+  width: 315px;
   padding-left: 8px;
   padding-top: 4px;
   padding-bottom: 4px;

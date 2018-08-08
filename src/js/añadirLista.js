@@ -27,7 +27,7 @@ function anadirColumna(){
   contenedorInterno.className= "col p-0 contenedorInterno"
 
   let anadirTarjeta= document.createElement("div");
-  anadirTarjeta.className= "col col-12";
+  anadirTarjeta.className= "col col-12 anadirTarjeta";
   anadirTarjeta.addEventListener("click", mostrarTarjetaOnclick);
   anadirTarjeta.textContent= "+ Añada una tarjeta";
   let tituloTarjeta= document.createElement("textarea");
@@ -91,3 +91,6 @@ function anadirTarjetaOnclick(event){
   let nuevaTarea= padre.insertBefore(nuevoHijo, padre.lastChild);
   
 }
+
+
+{/* <i class="fas fa-times"></i> icono equis q me faltaaa*/} 

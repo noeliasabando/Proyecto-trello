@@ -4,6 +4,7 @@ ocultarInput.addEventListener("click", (event)=>{
   ocultarInput.classList.toggle("oculto");
   document.getElementById("tituloLista").classList.toggle("oculto");
   document.getElementById("botonAnadirLista").classList.toggle("oculto");
+  document.getElementById("iconoX").classList.toggle("oculto");
 })
 
 const guardarTituloLista= document.getElementById("botonAnadirLista");
@@ -81,15 +82,14 @@ function mostrarTarjetaOnclick(event){
   hijos.forEach(hijo => {
     hijo.classList.toggle("oculto");
   });
-}
+}/*toggle si esta lo quita, si no esta lo pone*/
 
 function anadirTarjetaOnclick(event){
   let nuevoHijo= document.createElement("div");
   nuevoHijo.className= "row nuevaTarea";
-  nuevoHijo.textContent= event.target.previousSibling.value;
+  nuevoHijo.textContent= event.target.previousSibling.value; /* debuelve nodo anterior al nodo especificado */
   let padre= event.target.parentElement.parentElement.parentElement;
   let nuevaTarea= padre.insertBefore(nuevoHijo, padre.lastChild);
-  
 }
 
 

@@ -1,4 +1,4 @@
- .navbar{
+.navbar{
   background-color: #026aa7;
   padding: 4px;
   z-index: 10;
@@ -22,6 +22,12 @@
   height: 34px;
 }
 
+@media (max-width: 414px){
+  #tableros{
+    display: none;
+  }
+}
+
 #iconoBuscar{
   margin-left:-30px;
   color:  white;
@@ -38,6 +44,12 @@
 #logoTrello{ 
   opacity: .5;
 } 
+
+@media (max-width: 414px){
+  #logoTrello{
+    margin-left: -650px;
+  }
+}
 
 #anadirLista{
   color: white;
@@ -105,11 +117,25 @@ body{
   border: rgba(165, 158, 158, 0.788);
 }
 
+@media (max-width: 414px){
+  #btnUser{
+    margin-top: 40px;
+    margin-left: -180px;
+  }
+}
+
 #logoUser{
   margin-left: 85px;
   font-size: 30px;
   margin-top: 9px;
   color: hsla(0,0%,100%,.3); 
+}
+
+@media (max-width: 414px){
+  #logoUser{
+    margin-top: 40px;
+    margin-left: -180px;
+  }
 }
 
 #anadirLista{
@@ -179,6 +205,15 @@ body{
   margin-left: 10px;
 }
 
+@media (max-width: 414px){
+  #btnInfo{
+    display: none;
+  }
+  #iconoInfo{
+    display: none;
+  }  
+}
+
 #iconoInfo{
   margin-left: -30px;
   color: white;
@@ -198,12 +233,19 @@ body{
   padding-left: 35px;
 }
 
-#logos3{
-  margin-right: -50px;
+@media (max-width: 1366px){
+  #logos{
+    padding-right:0%;
+  }
+  #logos3{
+    margin-right: -50px;
+  }
 }
-
-#logos{
-  padding-right:0%;
+@media (max-width: 414px){
+  #logos{
+    margin-left: 200px;
+    margin-top: -35px;
+  }
 }
 
 #btnUserBarra{
@@ -235,6 +277,12 @@ body{
  margin-left: 10px;
  text-decoration: underline; 
  cursor: pointer;
+}
+@media (max-width: 414px){
+  #menu{
+    margin-top: -50px;
+    margin-left: 350px;
+  }
 }
 
 .tituloTarjetas{
@@ -286,6 +334,12 @@ body{
   margin-right: -60px;
 }
 
+@media (max-width: 414px){
+  .columna{
+    margin-right: -155px;
+  }
+}
+
 .nuevaTarea{
   background-color: white;
   border-radius: 5px;
@@ -305,3 +359,17 @@ body{
   font-size: 14px;
   color: rgb(140, 140, 140);  
 }
+.anadirTarjeta:hover{
+  text-decoration: underline;
+}
+
+#iconoX{
+  color: #999;
+  font-size: 22px;
+  margin-left: 135px;
+  margin-top: -38px;
+  padding-bottom: 10px;
+  cursor: pointer;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+

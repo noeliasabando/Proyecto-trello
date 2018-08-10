@@ -1,68 +1,95 @@
-.navbar{
+header{
   background-color: #026aa7;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
   padding: 4px;
   z-index: 10;
-  height: 40px;
-}
-
-#iconoTrello{
-  margin-left: -95px;
-  color: white;
-}
-
-#tableros{
-  color: white;
-  background-color: hsla(0,0%,100%,.3);
-  border: hsla(0,0%,100%,.3);
-  text-align: right;
-  width: 100px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  height: 34px;
-}
-
-@media (max-width: 414px){
-  #tableros{
-    display: none;
-  }
-}
-
-#iconoBuscar{
-  margin-left:-30px;
-  color:  white;
-}
-
-#inputSearch{
-  background-color: hsla(0,0%,100%,.3);
-  border: hsla(0,0%,100%,.3);
-  margin-left: 70px;  
-  width: 250px;
-  height: 34px;
-}
-
-#logoTrello{ 
-  opacity: .5;
-} 
-
-@media (max-width: 414px){
-  #logoTrello{
-    margin-left: -550px;
-  }
-}
-
-#anadirLista{
-  color: white;
-  background-color: #026aa7;
-  border: #026aa7;
 }
 
 body{
   background-color: rgb(0, 121, 191);
 }
 
-.container{
-  margin-top: 20px;
+#tableros{
+  color: white;
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  
+}
+
+#iconoTrello{
+  color: white;
+  font-size: 14px;
+}
+
+#inputSearch{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);   
+  height: 32px;
+  border-radius: 3px;
+  
+}
+
+#iconoBuscar{
+  margin-left:-40px;
+  color:  white;
+}
+
+#logoTrello{ 
+ opacity: .5;
+ width: 100px;
+} 
+
+#btnMas{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  color: white;
+  border-radius: 3px;
+  height: 33px;
+  width: 35px;
+}
+
+#btnInfo{
+  background-color: hsla(0,0%,100%,.3);
+  border: hsla(0,0%,100%,.3);
+  color: white;
+  border-radius: 3px;
+  height: 33px;
+  width: 35px;
+  margin-left: 3px;
+}
+
+@media (max-width: 750px){
+  #btnInfo{
+    display: none;
+  }
+} 
+
+#btnCampana{
+  background-color: rgba(236, 58, 14, 0.808);
+  border: rgba(236, 58, 14, 0.808);
+  color: white;
+  border-radius: 3px;
+  height: 33px;
+  width: 35px;
+  margin-left: 3px;
+}
+
+#btnUserBarra{
+  border-radius: 25em;  
+  font-size: 12px;
+  font-weight: 700;
+  height: 30px;
+  background-color: rgba(233, 223, 223, 0.788);
+  border: rgba(165, 158, 158, 0.788);
+  margin-left: 3px;
 }
 
 #textTablero{
@@ -89,19 +116,19 @@ body{
   margin-left: 50px;
 }
 
+#iconoMaleta{
+  color: #f6f6f6;
+  margin-top: 16px;
+  padding-left: 55px;
+  font-size: 12px;
+}
+
 #textPrivado{
   font-family: Arial, Helvetica, sans-serif;
   color: #f6f6f6;
   margin-top: 12px;
   font-size: 14px;
   padding-left: 40px;
-}
-
-#iconoMaleta{
-  color: #f6f6f6;
-  margin-top: 16px;
-  padding-left: 55px;
-  font-size: 12px;
 }
 
 #btnUser{
@@ -112,7 +139,7 @@ body{
   height: 30px;
   position: absolute;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: rgba(233, 223, 223, 0.788);
   border: rgba(165, 158, 158, 0.788);
 }
@@ -127,7 +154,7 @@ body{
 #logoUser{
   margin-left: 85px;
   font-size: 30px;
-  margin-top: 9px;
+  margin-top: 5px;
   color: hsla(0,0%,100%,.3); 
 }
 
@@ -136,6 +163,31 @@ body{
     margin-top: 40px;
     margin-left: -180px;
   }
+}
+
+#puntos{
+  color: white;
+  font-size: 12px;
+  margin-top: -95px;
+  padding-top: 62px;  
+  cursor: pointer;
+} 
+
+#menu{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ color: #f6f6f6;
+ margin-top: -40px;
+ margin-left: 90px;
+ text-decoration: underline; 
+ cursor: pointer;
+}
+
+
+#anadirLista{
+  color: white;
+  background-color: #026aa7;
+  border: #026aa7;
 }
 
 #anadirLista{
@@ -184,113 +236,6 @@ body{
   width: 280px;
 }
 
-#btnMas{
-  background-color: hsla(0,0%,100%,.3);
-  border: hsla(0,0%,100%,.3);
-  width: 35px;
-  height: 30px;
-/*  margin-left: 450px;   */
-}
-
-#iconoMas{
-  margin-left: -30px;
-  color: white;
-}
-
-#btnInfo{
-  background-color: hsla(0,0%,100%,.3);
-  border: hsla(0,0%,100%,.3);
-  width: 35px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-@media (max-width: 414px){
-  #btnInfo{
-    display: none;
-  }
-  #iconoInfo{
-    display: none;
-  }  
-}
-
-#iconoInfo{
-  margin-left: -30px;
-  color: white;
-}
-
-#btnCampana{
-  background-color: rgba(236, 58, 14, 0.808);
-  border: rgba(236, 58, 14, 0.808);
-  width: 35px;
-  height: 30px; 
-  margin-left: 10px; 
-  margin-right: -65px;
-}
-
-#iconoCampana{
-  color: white;
-  padding-left: 35px;
-}
-
-@media (max-width: 1366px){
-  #logos{
-    padding-right:0%;
-  }
-  #logos3{
-    margin-right: -50px;
-  }
-}
-@media (max-width: 414px){
-  #logos{
-    margin-left: 260px;
-    margin-top: -35px;
-  }
-}
-
-@media (max-width: 414px){
-  .navbar{
-    max-width: 530px;
-  }
-}
-
-#btnUserBarra{
-  margin-top: -30px;
-  margin-left: 70px;
-  border-radius: 25em;  
-  font-size: 12px;
-  font-weight: 700;
-  height: 30px;
-  position: absolute;
-  text-align: center;
-  background-color: rgba(233, 223, 223, 0.788);
-  border: rgba(165, 158, 158, 0.788);
-}
-
- #puntos{
-  color: white;
-  font-size: 12px;
-  margin-top: -95px;
-  padding-top: 62px;  
-  cursor: pointer;
-} 
-
-#menu{
- font-family: Arial, Helvetica, sans-serif;
- font-size: 14px;
- color: #f6f6f6;
- margin-top: -40px;
- margin-left: 10px;
- text-decoration: underline; 
- cursor: pointer;
-}
-@media (max-width: 414px){
-  #menu{
-    margin-top: -50px;
-    margin-left: 350px;
-  }
-}
-
 .tituloTarjetas{
   width: 268px;
   margin-left: 6px;
@@ -300,6 +245,7 @@ body{
   line-height: 20px;
   font-weight: 400;
   color: #333;
+  
 }
 
 .botonAnadirTarjetas{
@@ -340,12 +286,6 @@ body{
   margin-right: -60px;
 }
 
-@media (max-width: 414px){
-  .columna{
-    margin-right: -155px;
-  }
-}
-
 .nuevaTarea{
   background-color: white;
   border-radius: 5px;
@@ -378,4 +318,3 @@ body{
   cursor: pointer;  
   font-family: Arial, Helvetica, sans-serif;
 }
-

@@ -15,30 +15,31 @@
 
 <body>
   <header>
-    <div class="row">
-      <div class="col-auto col-md-12">
-        <nav class="navbar navbar-expand-lg">
-          <form class="form-inline form">
-            <button id="tableros" class="col-3 btn btn-outline-success" type="submit">Tableros</button>
-            <i id="iconoTrello" class="fab fa-trello col-1"></i>
-            <input id="inputSearch" class="col-2 col-md-7 form-control text-center" type="search" aria-label="Search">
-            <i id="iconoBuscar" class="fas fa-search"></i>
-          </form>
-          <div class="col-1 col-md-4 text-center">
-            <img id="logoTrello" src="img/descarga.png" alt="logo trello">
-          </div>
-          <div id="logos" class="col-4 col-md-4 text-right">
-            <div id="logos3">
-              <button id="btnMas" class=" btn btn-outline-success" type="submit"></button>
-              <i id="iconoMas" class="fas fa-plus"></i>
-              <button id="btnInfo" class=" btn btn-outline-success" type="submit"></button>
-              <i id="iconoInfo" class="fas fa-info-circle"></i>
-              <button id="btnCampana" class=" btn btn-outline-success" type="submit"></button>
-              <i id="iconoCampana" class="far fa-bell"></i>
-            </div>
-            <button id="btnUserBarra">NS</button>
-          </div>
-        </nav>
+    <div class="barra">
+      <div class="row">
+        <div class="col-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+          <button id="tableros" class="col-1 col-xs-1 col-md-1 col-lg-1 col-xl-1" type="submit">
+            <i id="iconoTrello" class="fab fa-trello"></i> Tableros</button>
+
+          <input id="inputSearch" class="col-1 col-xs-1 col-md-1 col-lg-1 col-xl-2" type="search" aria-label="Search">
+          <i id="iconoBuscar" class="fas fa-search col-1 col-xs-1 col-md-1 col-lg-1 col-xl-1"></i>
+
+          <img id="logoTrello" class="col-7 col-xs-7 col-md-7 col-lg-7 col-xl-8 offset-1" src="img/descarga.png" alt="logo trello">
+
+          <button id="btnUserBarra" class="float-right">NS</button>
+
+          <button id="btnCampana" type="submit" class="float-right">
+            <i id="iconoCampana" class="far fa-bell"></i>
+          </button>
+
+          <button id="btnInfo" type="submit" class="float-right">
+            <i id="iconoInfo" class="fas fa-info-circle"></i>
+          </button>
+
+          <button id="btnMas" type="submit" class="float-right">
+            <i id="iconoMas" class="fas fa-plus"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -76,21 +77,32 @@
           </div>
         </div>
       </div>
-      <i id="puntos" class="row fas fa-ellipsis-h col-1 col-md-11 text-right"></i>
-      <p id="menu">Mostrar menú</p>
+      <i id="puntos" class="row fas fa-ellipsis-h col-11 col-md-11 text-right"></i>
+      <p id="menu" class="col-11 col-md-11 text-right">Mostrar menú</p>
     </div>
   </section>
+
 
   <section id="tablero" class="row flex-row flex-nowrap">
     <div class="col nuevaColumna col-9 col-md-3 pr-0 order-last">
       <div class="card-white">
         <button id="anadirLista" class="form-control col-12 ">+Añada una lista...</button>
         <input id="tituloLista" class="form-control col-12 oculto" type="search" placeholder=" Introduzca el título de la lista...">
-        <button id="botonAnadirLista" class="btn btn-outline-success col-5 oculto" onclick="anadirColumna()">Añadir lista</button> 
-        <p id="iconoX" class="oculto">x</p>      
+        <button id="botonAnadirLista" class="btn btn-outline-success col-5 oculto" onclick="anadirColumna()">Añadir lista</button>
+        <p id="iconoX" class="oculto">x</p>
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
+
+
+
 
 
 

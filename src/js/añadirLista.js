@@ -15,7 +15,7 @@ function anadirColumna(){
   document.getElementById("tituloLista").value ="";
 
   let columna= document.createElement("div");
-  columna.className = "col col-12 col-md-3 columna";
+  columna.className = "col col-10 col-xs-10 col-md-8 col-lg-6 col-xl-3 columna";
   let fondoColumna= document.createElement("div");
   fondoColumna.className= "card-white col fondoColumna";
   let titulo= document.createElement("div");
@@ -35,6 +35,7 @@ function anadirColumna(){
   tituloTarjeta.className= "col form-control col-12 oculto";
   tituloTarjeta.placeholder= " Introduzca un título para esta tarjeta...";
   tituloTarjeta.classList.add("tituloTarjetas");
+  
   let botonAnadirTarjeta= document.createElement("button");
   botonAnadirTarjeta.className= "col btn btn-outline-success col-5 oculto";
   botonAnadirTarjeta.addEventListener("click" , anadirTarjetaOnclick);
@@ -62,7 +63,6 @@ function anadirColumna(){
       <div class="row titulo hermano">
           tutulo
       </div> 
-
       <div class="row contenedoropciones hermano">
         <div class="col p-0">
           <div id="anadirTarjeta" class="col col-12" onclick="anadirTarjeta()">Añada una tarjeta</div>
@@ -70,7 +70,6 @@ function anadirColumna(){
           <button id="botonAnadirTarjeta" class="col btn btn-outline-success col-4 oculto" onclick="anadirColumna()">Añadir lista</button>
         </div>
       </div>
-
     </div>
   </div>
   `

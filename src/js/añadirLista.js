@@ -86,10 +86,14 @@ function mostrarTarjetaOnclick(event){
 function anadirTarjetaOnclick(event){
   let nuevoHijo= document.createElement("div");
   nuevoHijo.className= "row nuevaTarea";
-  nuevoHijo.textContent= event.target.previousSibling.value; /* debuelve nodo anterior al nodo especificado */
+  nuevoHijo.textContent= event.target.previousSibling.value; /* devuelve nodo anterior al nodo especificado */
+  event.target.previousSibling.value = "";
   let padre= event.target.parentElement.parentElement.parentElement;
   let nuevaTarea= padre.insertBefore(nuevoHijo, padre.lastChild);
+
 }
 
 
-{/* <i class="fas fa-times"></i> icono equis q me faltaaa*/} 
+{/* <i class="fas fa-times"></i> icono equis q me faltaaa   
+https://www.w3schools.com/jsref/event_onreset.asp
+https://www.w3schools.com/jsref/met_element_removeeventlistener.asp*/} 

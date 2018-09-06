@@ -94,6 +94,3 @@ function anadirTarjetaOnclick(event){
 }
 
 
-{/* <i class="fas fa-times"></i> icono equis q me faltaaa   
-https://www.w3schools.com/jsref/event_onreset.asp
-https://www.w3schools.com/jsref/met_element_removeeventlistener.asp*/} 

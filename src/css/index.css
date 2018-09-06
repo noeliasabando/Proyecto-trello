@@ -114,6 +114,7 @@ body{
   color: #f6f6f6;
   margin-top: 12px;
   margin-left: 50px;
+  display: block;
 }
 
 #iconoMaleta{
@@ -121,6 +122,7 @@ body{
   margin-top: 16px;
   padding-left: 55px;
   font-size: 12px;
+  display: block;
 }
 
 #textPrivado{

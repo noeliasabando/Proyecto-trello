@@ -146,10 +146,12 @@ body{
   border: rgba(165, 158, 158, 0.788);
 }
 
-@media (max-width: 414px){
+@media (max-width: 415px){
   #btnUser{
-    margin-top: 40px;
-    margin-left: -180px;
+    display: none;
+  }
+  #logoUser{
+    display: none;
   }
 }
 
@@ -321,3 +323,13 @@ body{
   cursor: pointer;  
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 455px){
+  #puntos{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+} 
+

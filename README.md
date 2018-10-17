@@ -1,4 +1,4 @@
-# Proyecto Pinterest
+# Proyecto Trello
 
 ## Objetivo del proyecto
 
@@ -9,3 +9,6 @@ tareas asignadas a cada una.
 
 ## Link del proyecto
 [Mi Trello](https://noeliasabando.github.io/Proyecto-trello/)
+
+## Desarrollado para
+[Laboratoria](http://www.laboratoria.la/)
